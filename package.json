@@ -18,12 +18,13 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\""
+    "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+    "dev:db": "json-server --watch db.json --port=8888"
   },
   "eslintConfig": {},
   "browserslist": {
@@ -43,13 +44,15 @@
     "@craco/craco": "^7.1.0",
     "@testing-library/jest-dom": "^6.1.5",
     "@types/eslint": "^8",
-    "@types/testing-library__jest-dom": "^6.0.0",
+    "@types/json-server": "^0",
+    "@types/testing-library__jest-dom": "^5.14.9",
     "craco-alias": "^3.0.1",
     "eslint": "^8.55.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
+    "json-server": "^0.17.4",
     "prettier": "^3.1.1"
   }
 }
