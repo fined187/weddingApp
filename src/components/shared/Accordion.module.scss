@@ -1,0 +1,34 @@
+.wrap-accordion {
+  margin-bottom: 6px;
+  .wrap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    padding: 10px;
+
+    background-color: var(--beige);
+    border-radius: 6px;
+
+    .icon-arrow-down {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .wrap-content {
+    display: none;
+  }
+}
+
+.wrap-accordion.open {
+  .wrap-header {
+    .icon-arrow-down {
+      transform: rotate(-180deg);
+    }
+  }
+  .wrap-content {
+    display: block;
+  }
+}
