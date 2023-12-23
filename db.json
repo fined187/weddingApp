@@ -26,7 +26,7 @@
       }
     },
     "groom": {
-      "name": "류우선",
+      "name": "이우택",
       "account": {
         "bankName": "신한",
         "accountNumber": "110-356-123433",
@@ -35,7 +35,7 @@
       "phoneNumber": "01045532323",
       "parents": [
         {
-          "name": "류영만",
+          "name": "이승훈",
           "account": {
             "bankName": "농협",
             "accountNumber": "233331-51-061400"
@@ -43,7 +43,7 @@
           "phoneNumber": "01053242422"
         },
         {
-          "name": "봉미선",
+          "name": "서지현",
           "account": {
             "bankName": "농협",
             "accountNumber": "352-1252-4559-90"
@@ -53,7 +53,7 @@
       ]
     },
     "bride": {
-      "name": "이지혜",
+      "name": "김희영",
       "account": {
         "bankName": "농협",
         "accountNumber": "352-0952-4669-11"
@@ -61,7 +61,7 @@
       "phoneNumber": "01022345124",
       "parents": [
         {
-          "name": "이훈이",
+          "name": "",
           "account": {
             "bankName": "카카오뱅크",
             "accountNumber": "3333-1112-11932"
@@ -69,7 +69,7 @@
           "phoneNumber": "01024333423"
         },
         {
-          "name": "정유리",
+          "name": "",
           "account": {
             "bankName": "국민",
             "accountNumber": "222-19-8842-472"
