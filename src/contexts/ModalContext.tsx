@@ -25,7 +25,7 @@ export default function ModalContext({
   children: React.ReactNode
 }) {
   const [modalState, setModalState] = useState<ModalProps>(defaultValues)
-  const portalRoot = document.getElementById('portal-root') as HTMLElement
+  const $portalRoot = document.getElementById('root-portal') as HTMLElement
 
   const open = (options: ModalOptions) => {
     setModalState({ ...options, open: true })
@@ -46,8 +46,8 @@ export default function ModalContext({
   return (
     <Context.Provider value={values}>
       {children}
-      {portalRoot !== null
-        ? createPortal(<Modal {...modalState} />, portalRoot)
+      {$portalRoot !== null
+        ? createPortal(<Modal {...modalState} />, $portalRoot)
         : null}
     </Context.Provider>
   )
@@ -56,7 +56,7 @@ export default function ModalContext({
 export function useModalContext() {
   const values = useContext(Context)
 
-  if (values === null) {
+  if (values == null) {
     throw new Error('ModalContext 안에서 사용해주세요')
   }
   return values

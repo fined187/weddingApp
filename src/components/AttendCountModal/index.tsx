@@ -5,13 +5,11 @@ import { useEffect, useRef } from 'react'
 export default function AttendCountModal({ wedding }: { wedding: Wedding }) {
   const { open, close }: any = useModalContext()
 
-  const $input = useRef<HTMLInputElement>(null)
+  const $input = useRef<HTMLInputElement>(null) //  의존성이 추가될 수 있으므로 useRef를 사용한다.
 
   const haveSeenModal = localStorage.getItem('@have-seen-modal')
 
   useEffect(() => {
-    console.log('hi')
-
     if (haveSeenModal === 'true') {
       return
     }
@@ -52,7 +50,6 @@ export default function AttendCountModal({ wedding }: { wedding: Wedding }) {
         close()
       },
     })
-  }, [open, close, wedding, haveSeenModal])
-
+  }, [open, close, wedding, haveSeenModal]) // eslint-disable-line
   return null
 }
