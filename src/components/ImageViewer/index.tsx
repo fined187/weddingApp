@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import './swiper.css'
 import Dimmed from '../shared/Dimmed'
+import { memo } from 'react'
 
 const cx = classNames.bind(styles)
 
